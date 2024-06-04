@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <EditText
+        android:id="@+id/etTaskTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bottom_nav_style"
+        android:ems="10"
+        android:hint="Task title"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="noExcludeDescendants"
+        android:inputType="text"
+        android:paddingLeft="15.0dip"
+        android:paddingTop="20.0dip"
+        android:paddingRight="15.0dip"
+        android:paddingBottom="20.0dip"
+        android:textColor="?android:textColor"
+        android:textColorLink="?android:textColor"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerSelectClass"
+        app:layout_constraintStart_toStartOf="@+id/spinnerSelectClass"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSelectClass" />
+
+    <ImageButton
+        android:id="@+id/btnConfirm2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/key_confirm"
+        android:src="@drawable/baseline_done_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerSelectClass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16.0dp"
+        android:background="@drawable/bottom_nav_style"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:paddingStart="15.0dp"
+        android:paddingTop="10.0dp"
+        android:paddingEnd="70.0dp"
+        android:paddingBottom="10.0dp"
+        android:textColor="?android:textColor"
+        android:textColorLink="?android:textColor"
+        android:theme="@style/SpinnerStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAddTaskTitle" />
+
+    <TextView
+        android:id="@+id/tvAddTaskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18.0dp"
+        android:background="@drawable/bottom_nav_style"
+        android:paddingStart="70.0dp"
+        android:paddingTop="10.0dp"
+        android:paddingEnd="70.0dp"
+        android:paddingBottom="10.0dp"
+        android:text="@string/key_addTask"
+        android:textSize="28.0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/key_back_button"
+        app:layout_constraintBottom_toBottomOf="@id/tvAddTaskTitle"
+        app:layout_constraintEnd_toStartOf="@id/tvAddTaskTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvAddTaskTitle"
+        app:srcCompat="@drawable/baseline_keyboard_backspace_24" />
+
+    <TextView
+        android:id="@+id/tvCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bottom_nav_style"
+        android:paddingStart="15.0dp"
+        android:paddingTop="20.0dp"
+        android:paddingEnd="70.0dp"
+        android:paddingBottom="20.0dp"
+        android:text="@string/date_of_task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/spinnerSelectClass"
+        app:layout_constraintTop_toBottomOf="@+id/etTaskTitle" />
+
+    <ImageButton
+        android:id="@+id/btnCalendar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/calendar_ui"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:src="@drawable/baseline_edit_calendar_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCalendar"
+        app:layout_constraintEnd_toEndOf="@+id/tvCalendar"
+        app:layout_constraintTop_toTopOf="@+id/tvCalendar"
+        app:tint="@color/off_black" />
+
+    <TextView
+        android:id="@+id/tvExam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16.0dp"
+        android:background="@drawable/bottom_nav_style"
+        android:paddingStart="15.0dp"
+        android:paddingTop="20.0dp"
+        android:paddingEnd="70.0dp"
+        android:paddingBottom="20.0dp"
+        android:text="@string/exam"
+        android:textColor="?android:textColor"
+        android:textColorLink="?android:textColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalendar" />
+
+    <CheckBox
+        android:id="@+id/examCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="36.0dp"
+        android:height="36.0dp"
+        android:minWidth="48.0dp"
+        android:minHeight="48.0dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:layout_constraintBottom_toBottomOf="@id/tvExam"
+        app:layout_constraintEnd_toEndOf="@id/tvExam"
+        app:layout_constraintTop_toTopOf="@id/tvExam" />
+
+    <LinearLayout
+        android:id="@+id/extraExamLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/tvExam"
+        app:layout_constraintStart_toStartOf="@+id/tvExam"
+        app:layout_constraintTop_toBottomOf="@+id/tvExam">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/extraExam_item1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15.0dp"
+                android:text="@string/how_many_days_to_study"
+                android:textColor="?android:textColor"
+                android:textColorHighlight="?android:textColor"
+                android:textColorLink="?android:textColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlSymmetry" />
+
+            <Spinner
+                android:id="@+id/spinnerTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48.0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bottom_nav_style"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/description"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:paddingStart="15.0dp"
+        android:paddingTop="20.0dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConfirm2"
+        app:layout_constraintEnd_toEndOf="@+id/extraExamLayout"
+        app:layout_constraintStart_toStartOf="@+id/extraExamLayout"
+        app:layout_constraintTop_toBottomOf="@+id/extraExamLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

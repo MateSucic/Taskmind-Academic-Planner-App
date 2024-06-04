@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Taskmind</string>
+    <string name="key_sort">Sort</string>
+    <string name="key_addTask">Add task</string>
+    <string name="key_back_button">Back</string>
+    <string name="key_etSelectClass">Select a class</string>
+    <string name="error_EmptyClass">Please enter your classes in settings</string>
+    <string name="key_Classes">CLASSES</string>
+    <string name="key_addClass">Add class</string>
+    <string name="key_confirm">Confirm</string>
+    <string name="key_settings">Settings</string>
+    <string name="key_tasks">TASKS</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="calendar_ui">Calendar UI</string>
+    <string name="exam">Exam</string>
+    <string name="description">Description</string>
+    <string name="how_many_days_to_study">How many days to study?</string>
+    <string name="date_of_task">Due date:</string>
+</resources>

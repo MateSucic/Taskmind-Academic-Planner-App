@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Taskmind" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:spinnerStyle">@android:style/Widget.DeviceDefault.Light.Spinner</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/off_black</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="colorAccent">@color/off_black</item>
+    </style>
+    <style name="Theme.Taskmind" parent="@style/Base.Theme.Taskmind"/>
+    <style name="MyBottomNavigationTextStyle" parent="@style/Base.Theme.Taskmind">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/bottom_nav_color</item>
+    </style>
+    <style name="SpinnerStyle">
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+</resources>

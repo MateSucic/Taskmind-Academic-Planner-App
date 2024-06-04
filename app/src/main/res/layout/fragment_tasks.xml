@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24.0dp"
+        android:layout_marginTop="18.0dp"
+        android:background="@drawable/bottom_nav_style"
+        android:paddingStart="70.0dp"
+        android:paddingTop="10.0dp"
+        android:paddingEnd="70.0dp"
+        android:paddingBottom="10.0dp"
+        android:text="@string/key_tasks"
+        android:textSize="28.0sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="60.0dp"
+        android:layout_height="60.0dp"
+        android:layout_marginEnd="32.0dp"
+        android:layout_marginBottom="32.0dp"
+        android:backgroundTint="#ff5c5c5c"
+        android:clickable="true"
+        android:contentDescription="@string/key_addTask"
+        android:focusable="true"
+        android:foreground="@drawable/baseline_plus_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:id="@+id/layoutSubjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
